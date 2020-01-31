@@ -1,0 +1,98 @@
+
+
+{
+  "success": true,
+  "code": 20000,
+  "name": "Product feedback survey",
+  "json": {
+    "_id": "5d1f1e8213c4e01aab2d52e5",
+    "name": "seminar-01",
+    "pages": [
+      {
+        "name": "page1",
+        "elements": [
+          {
+            "type": "text",
+            "name": "userid",
+            "title": "UserID:",
+            "isRequired": true
+          },
+          {
+            "type": "radiogroup",
+            "name": "readytogo",
+            "title": "ไปงานสัมมนากันมั้ยจ๊ะ",
+            "isRequired": true,
+            "choices": [
+              {
+                "value": "Yes",
+                "text": "ไป"
+              },
+              {
+                "value": "No",
+                "text": "ไม่ไป"
+              }
+            ],
+            "colCount": 0
+          },
+          {
+            "type": "radiogroup",
+            "name": "barrating1",
+            "visibleIf": "{readytogo}='Yes'",
+            "title": "ไปกันยังไง",
+            "choices": [
+              {
+                "value": "1",
+                "text": "รถบัส"
+              },
+              {
+                "value": "2",
+                "text": "ขับรถไปเอง"
+              }
+            ]
+          },
+          {
+            "type": "dropdown",
+            "name": "datetogo",
+            "visibleIf": "{readytogo}='Yes'",
+            "title": "ไปวันไหน",
+            "choices": [
+              {
+                "value": "1",
+                "text": "01 พฤศจิกายน 2019"
+              },
+              {
+                "value": "2",
+                "text": "02 พฤศจิกายน 2019"
+              },
+              {
+                "value": "3",
+                "text": "03 พฤศจิกายน 2019"
+              }
+            ]
+          },
+          {
+            "type": "dropdown",
+            "name": "datetoback",
+            "visibleIf": "{readytogo}='Yes'",
+            "startWithNewLine": false,
+            "title": "กลับวันไหน",
+            "choices": [
+              {
+                "value": "1",
+                "text": "01 พฤศจิกายน 2019"
+              },
+              {
+                "value": "2",
+                "text": "02 พฤศจิกายน 2019"
+              },
+              {
+                "value": "3",
+                "text": "03 พฤศจิกายน 2019"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
